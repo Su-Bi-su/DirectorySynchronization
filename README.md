@@ -23,13 +23,13 @@ pip install pytest-dependency
 
 2. Using command line navigate to the "src" directory
 
-3. For unit testing
+### For unit testing
 
 ```
 pytest -v
 ```
 
-4. For running the program
+### For running the program
 
 - Arguments can be provided using command line
 
@@ -37,9 +37,9 @@ Arguments : "source directory", "replica directory", "synchronization interval" 
 
 - "source directory" and "replica directory" are mandatory arguments
 - "synchronization interval" , "log file" , and "timeout" are optional arguments
-        - default values : 
-        - "synchronization interval" = 5sec , 
-        - "log file" = synclog.log , and 
+- Default values : 
+-       - synchronization interval = 5sec , 
+        - log file" = src\synclog.log , and 
         - timeout = 0(for continuous synchronization, without timeout)
 
 ```
@@ -51,6 +51,7 @@ OR
 ```
 python sync_directories.py "<source directory>" "<replica directory>" -i <schedule interval> -l <logfile> -t <timeout>
 ```
+
 
 - This program can also be used to run in background in windows machine using Task Scheduler
 
